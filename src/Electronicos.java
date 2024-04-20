@@ -1,7 +1,7 @@
 public abstract class Electronicos {
     //atributos
     protected String nombre;
-    protected float modelo;
+    protected float modelo = 23412;
     protected String descripcion;
     protected float precio;
 
@@ -18,6 +18,10 @@ public abstract class Electronicos {
         this.precio = precio;
     }
 
+    public float numeroModelo(){
+        modelo++;
+        return modelo;
+    }
 
 
     public String getNombre() {

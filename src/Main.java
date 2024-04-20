@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    private static List<Electronicos> electronicos;
     public static void main(String[] args) {
         boolean seguir = true;
         int opc;
@@ -15,14 +16,19 @@ public class Main {
             System.out.println("------------------------------------");
 
             int numero = sc.nextInt();
-            System.out.println(numero);
+            sc.nextLine();
 
             switch (numero){
                 case 1:
                     System.out.println("Que tipo de articulo desea agregar?");
                     System.out.println("1. Telefono");
                     System.out.println("2. Laptop");
-                    
+                    opc = sc.nextInt();
+                    if (opc == 1){
+                        System.out.println("Digite los datos deseados: ");
+                    }else {
+                        System.out.println("Digite los datos deseados: ");
+                    }
                     break;
                 case 2:
                     break;
